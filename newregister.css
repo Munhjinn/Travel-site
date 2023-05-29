@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 2rem;
+    background: #1d2b3a;
+}
+.inputBox {
+    position: relative;
+    width: 250px;
+}
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.64rem;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2rem;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+
+    border: 1px solid #00dfc4;
+}
+.btn {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+}
+.btn:hover {
+    border: #00dfc4 1px solid;
+    color: #00dfc4;
+    cursor: pointer;
+
+}
+
+.inputBox:nth-child(5) span,
+.inputBox:nth-child(5) span
+{
+    font-size: 0.75rem;
+
+}
+
+.inputBox:nth-child(5) input:valid ~ span,
+.inputBox:nth-child(5) input:focus ~ span
+{
+    font-size: 0.5rem;
+
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    color: rgb(0, 252, 113);
+    font-size: 4rem;
+}
+
