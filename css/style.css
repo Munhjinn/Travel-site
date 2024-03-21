@@ -63,9 +63,9 @@ h1,h2,h3,h4,h5,h6 {
     justify-self: end;
     display: flex;
 }
-#main-nav ul:hover {
+#main-nav .container ul li a:hover {
     cursor: pointer;
-    color: ;
+    color: #00dfc4;
 }
 
 
@@ -156,7 +156,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 0.75rem;
     text-transform: uppercase;
     padding: 0.75rem 1.5rem;
-    border-radius: 15px;
+    border-radius: 16px;
     margin-bottom: 0.5rem;
 }
 
@@ -185,7 +185,17 @@ h1,h2,h3,h4,h5,h6 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
 }
-.container .city-grid .details .details-img {
-    height: 220px;
-    width: 50px;
+.container .city-grid  .details .city-img img {
+    height: 350px;
+    width: 500px;
+    margin-bottom: 1rem;
 }
+
+.container .city-grid > *:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-column: 1 / span 2;
+}
+
+
