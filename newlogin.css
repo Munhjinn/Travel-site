@@ -23,8 +23,8 @@ body {
 .inputBox input {
     width: 100%;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background: #1d2b3a;
+    border: 1px solid rgba(73, 66, 66, 0.25);
+    background: #182532;
     border-radius: 5px;
     outline: none;
     color: #fff;
