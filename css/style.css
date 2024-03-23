@@ -7,6 +7,7 @@
     --light-seacolor: #00dfc4;
     --light-naturecolor: rgb(0, 252, 113);
     --light-yellowcolor: rgb(255, 251, 0);
+   
     --max-width: 1100px ;
     --menu-speed: 0.75s;
 }
@@ -34,6 +35,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0.55rem;
     line-height: 1.3;
 }
+
 .footer {
     display: flex;
     background: var(--dark-color);
@@ -42,10 +44,6 @@ h1,h2,h3,h4,h5,h6 {
     height: 100px;
     align-items: center;
 }
-
-
-
-
 
 /* Navigation */
 #main-nav {
@@ -58,14 +56,11 @@ h1,h2,h3,h4,h5,h6 {
 #main-nav .container {
     display: grid;
     grid-template-columns:6fr 2fr;
-    padding: 1rem;
+    padding: 0.5rem;
     align-items: center;
 }
 
-#main-nav .container .menu-wrap {
-    padding-bottom: 10px ;
-    padding-left: -100px;
-}
+
 .logo a {
     font-size: 2rem;
     color: rgb(0, 252, 113);
@@ -86,30 +81,8 @@ h1,h2,h3,h4,h5,h6 {
 #main-nav ul li a {
     padding: 0.75rem;
 }
-/* footer */
-#main-footer {
-    background: #1d2b3a;
-    height: 50px;
-}
-#main-footer .container {
-    display: grid;
-    grid-template-columns: 6fr 2fr;
-    align-items: center;
-}
-#main-footer ul {
-    justify-self: end;
-    display: flex;
-    align-items: center;
-}
-#main-footer .container ul li a:hover {
-    cursor: pointer;
-    color: #00dfc4;
-}
 
 
-#main-footer ul li a {
-    padding: 0.75rem;
-}
 
 
 /* Showcase */
@@ -173,6 +146,10 @@ h1,h2,h3,h4,h5,h6 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+    
+}
+#home-articles .home-container {
+    margin-bottom: 1rem;
 }
 
 @media (max-width:1000px) {
@@ -232,25 +209,137 @@ a
 }
 
 .container .city-grid {
+   
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 0 1rem;
+} 
+.city-grid p {
+    text-align: justify;
+}
+
+ .container  {
+    height: 100%;
+} 
+
+/* details */
+.details-article-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 0 1rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        
+        
+
+}
+
+.details-article-container img { 
+    height: 250px;
+    width: 500px;
+}
+/* 
+contact */
+#d-showcase {
+    color: #fff;
+    background: #050505;
+    padding: 2rem;
+    position: relative;
+    z-index: 0;
+    
+}
+#d-showcase:before {
+    content: '';
+    background: url('../img/5bogd.jpg') no-repeat  center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    height: 100%;
+    opacity: 0.8; 
+
+}
+
+#d-showcase .d-showcase-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    height: 70vh; 
+   
+
+}
+#d-showcase .d-showcase-content {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     align-items: center;
+     z-index: 1;
+    }
+
+
+    /* Viz */
+    #v-showcase .v-article-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+    .Uls {
+    background-color: #fff;
+    padding: 1rem;
+    }
+
+    .v-container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 1rem;
+    overflow: hidden;
+
+    }
+
+    #v-showcase .v-container .v-article-container img {
+    height: 250px;
+    width: 500px;
+    }
+
+
+/* juulchin */
+#ju-home-articles .ju-article-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+    
 }
-.container .city-grid  .details .city-img img {
-    height: 350px;
-    width: 500px;
+#ju-home-articles .ju-home-container {
     margin-bottom: 1rem;
 }
-
-.container .city-grid > *:first-child {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    grid-column: 1 / span 2;
+.ju-card {
+    background-color: #fff;
+    padding: 1rem;
 }
 
-.container .city-grid {
-    height: 800px;
+.ju-home-container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 1rem;
+    overflow: hidden;
+
 }
 
+#ju-home-articles .ju-home-container .ju-article-container img {
+    height: 250px;
+    width: 500px;
+}
+#ju-home-articles h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-left: 9rem;
+    margin-top:1rem;
+    
+}
 
+.ju-card p {
+    text-align: justify;
+}
