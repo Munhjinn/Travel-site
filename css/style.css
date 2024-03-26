@@ -343,3 +343,82 @@ contact */
 .ju-card p {
     text-align: justify;
 }
+
+/* gadaadaylal */
+#gad-home-articles .gad-article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    
+}
+#gad-home-articles .gad-home-container {
+    margin-bottom: 1rem;
+}
+.gad-card {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.gad-home-container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 1rem;
+    overflow: hidden;
+
+}
+
+#gad-home-articles .gad-home-container .gad-article-container img {
+    height: 250px;
+    width: 500px;
+}
+#gad-home-articles h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-left: 9rem;
+    margin-top:1rem;
+    
+}
+
+.gad-card p {
+    text-align: justify;
+}
+
+/* dotood aylal */
+
+#dot-home-articles .dot-article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    
+}
+#dot-home-articles .dot-home-container {
+    margin-bottom: 1rem;
+}
+.dot-card {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.dot-home-container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 1rem;
+    overflow: hidden;
+
+}
+
+#dot-home-articles .dot-home-container .dot-article-container img {
+    height: 250px;
+    width: 500px;
+}
+#dot-home-articles h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-left: 9rem;
+    margin-top:1rem;
+    
+}
+
+.dot-card p {
+    text-align: justify;
+}
